@@ -7,51 +7,106 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
+
+# ==========================================
+# Visual Studio
+# ==========================================
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide
+
+# ==========================================
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
+# ==========================================
+
 [Bb]in/
 [Oo]bj/
-[Ll]og/
-[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+[Aa]rtifacts/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
 
-# .NET Core
+# ==========================================
+# .NET / NuGet
+# ==========================================
+
+*.nupkg
+*.snupkg
+.nuget/
+packages/
 project.lock.json
 project.fragment.lock.json
-artifacts/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+# ==========================================
+# Visual Studio caches
+# ==========================================
 
-# NuGet Packages
-*.nupkg
-# NuGet Symbol Packages
-*.snupkg
+ipch/
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.sdf
+*.cachefile
 
-# dotenv environment variables file
-.env
+# ==========================================
+# ReSharper / Rider
+# ==========================================
 
-# Others
-~$*
-*~
-CodeCoverage/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/
 
-# MSBuild Binary and Structured Log
-*.binlog
+# ==========================================
+# Test results
+# ==========================================
 
-# MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
+# ==========================================
+# Publish
+# ==========================================
+
+publish/
+*.publishsettings
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
+
+# ==========================================
+# OS
+# ==========================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Temporary files
+# ==========================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# ==========================================
+# WPF generated files
+# ==========================================
+
+*.g.cs
+*.g.i.cs
+*.baml
+
